@@ -13,7 +13,7 @@ class MyApp_contact extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             centerTitle: false,
-            title : Text('앱재목')),
+            title : Text('앱재목123')),
         body: Text('바디'),
         bottomNavigationBar: BottomAppBar(
           child: Row(
