@@ -13,8 +13,60 @@ class MyApp_contact extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             centerTitle: false,
-            title : Text('앱재목123')),
-        body: Text('바디'),
+            title : Text('당근마켓')),
+        body: SizedBox(
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+            children : [
+              SizedBox(
+                child:Row(
+                  children: [
+                    SizedBox(
+
+                      width: 100,
+                      child:Image.asset('assets/Cebu.jpg'),
+                    ),
+                    SizedBox(
+                      child: Column(
+                          children : const [
+                            Text('캐논 DSLR (단렌즈,충전기 16기가SD 포함)',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text('상덩그 헹당동 끌올 10분 전', textAlign: TextAlign.left,),
+                            Text('210,000원', style:  TextStyle(fontWeight: FontWeight.bold),),
+                          ]
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                child:Row(
+                  children: [
+                    SizedBox(
+
+                      width: 100,
+                      child:Image.asset('assets/Cebu.jpg'),
+                    ),
+                    SizedBox(
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children : const [
+                            Text('캐논 DSLR (단렌즈,충전기 16기가SD 포함)',
+                              style: TextStyle(fontWeight: FontWeight.bold,),
+                            ),
+                            Text('상덩그 헹당동 끌올 10분 전',textAlign : TextAlign.left,),
+                            Text('210,000원',
+                              style:  TextStyle(fontWeight: FontWeight.bold),),
+                          ]
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ]
+          ),
+        ),
         bottomNavigationBar: BottomAppBar(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
